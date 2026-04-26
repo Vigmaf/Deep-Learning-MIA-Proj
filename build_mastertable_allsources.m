@@ -5,7 +5,7 @@ projectRoot = "C:\Users\Admin.VIG\Desktop\MIA_DL_PROJECT";
 imagesRoot  = fullfile(projectRoot, "images", "images");
 masksRoot   = fullfile(projectRoot, "masks", "masks");
 
-% DEBUG: print what MATLAB sees
+% DEBUG
 disp("imagesRoot = " + imagesRoot);
 disp("masksRoot  = " + masksRoot);
 
@@ -15,7 +15,7 @@ disp(string({dir(imagesRoot).name})');
 disp("Folders inside masksRoot:");
 disp(string({dir(masksRoot).name})');
 
-% ---- Define mapping explicitly ----
+% ---- mapping explicit ----
 sources = [
     struct("name","blood_vessels", ...
         "imgDir", fullfile(imagesRoot, "images blood vessels"), ...
